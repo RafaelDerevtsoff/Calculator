@@ -165,11 +165,9 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 if(userInput.isNotEmpty){
                   var finalUserInput = userInput.replaceAll('X', '*').replaceAll('÷', '/');
-                  Parser p = Parser();
-                  Expression exp = p.parse(finalUserInput);
+                  Expression exp = Parser().parse(finalUserInput);
                   ContextModel cm = ContextModel();
-                  double eval = exp.evaluate(EvaluationType.REAL, cm);
-                  result = eval.toString();
+                  result = exp.evaluate(EvaluationType.REAL, cm).toString();
                   setState((){});
                 }
                 }),
