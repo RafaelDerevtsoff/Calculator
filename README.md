@@ -1,7 +1,6 @@
 # calculator
 
-A new Flutter project.
-
+A simple calculator with dark and white theme using #FLutter
 ## Getting Started
 
 This project is a starting point for a Flutter application.
